@@ -18,7 +18,7 @@ while True:
 
     while True:
         print("Selamat datang di ATM Progate..")
-        print("\n1 - Cek Saldo \t 2 - Debet \t 3 Simpan \t 4 - Ganti Pin \5 - Keluar ")
+        print("\n1 - Cek Saldo \t 2 - Debet \t 3 - Simpan \t 4 - Ganti Pin \t 5 - Keluar ")
         selectmenu = int(input("\nSilahkan pilih menu: "))
         if selectmenu == 1:
             print("\nSaldo anda sekarang: Rp. " + str(atm.checkBalance()) + "\n")
@@ -62,7 +62,7 @@ while True:
             else:
                 print("maaf, pin anda salah! ")
         elif selectmenu == 5:
-            print("Resi tercetak otomatis saat anda keluar. \n Harap simpan tanda terima ini \n sebagai bukti transaksi anda.")
+            print("Resi tercetak otomatis saat anda keluar. \nHarap simpan tanda terima ini \nsebagai bukti transaksi anda.")
             print("No. Rekord: ", random.randint(100000, 1000000))
             print("Tanggal: ", datetime.datetime.now())
             print("Saldo akhir: ", atm.checkBalance())
